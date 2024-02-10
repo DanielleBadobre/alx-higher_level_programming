@@ -16,6 +16,7 @@ def text_indentation(text):
             print(char, end="\n\n")
             skip_space = True
         elif char == " " and skip_space:
-            skip_space = False
+            continue
         else:
             print(char, end="")
+            skip_space = False
