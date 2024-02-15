@@ -8,7 +8,7 @@ def is_same_class(obj, a_class):
     :param a_class: class
     :return: True if obj is from class else, False
     """
-    if type(obj) == a_class:
+    if type(obj) is a_class:
         return True
     else:
         return False
