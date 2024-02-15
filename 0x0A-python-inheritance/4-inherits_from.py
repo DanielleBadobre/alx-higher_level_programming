@@ -8,4 +8,4 @@ def inherits_from(obj, a_class):
     :param a_class: class to check
     :return: True if obj is from subclass of a_class, else, False
     """
-    return type(obj) != a_class and isinstance(obj, a_class)
+    return type(obj) is not a_class and isinstance(obj, a_class)
