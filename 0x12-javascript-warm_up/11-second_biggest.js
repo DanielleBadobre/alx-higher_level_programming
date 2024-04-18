@@ -9,12 +9,12 @@ if (process.argv.length === 2 || process.argv.length === 3) {
 } else {
   for (let i = 2; i < process.argv.length; i++) {
     if (process.argv[i] > biggest) {
-      biggest = process.argv[i];
+      biggest = parseInt(process.argv[i]);
     }
   }
   for (let i = 2; i < process.argv.length; i++) {
     if (process.argv[i] < biggest && process.argv[i] > secBiggest) {
-      secBiggest = process.argv[i];
+      secBiggest = parseInt(process.argv[i]);
     }
   }
   console.log(secBiggest);
