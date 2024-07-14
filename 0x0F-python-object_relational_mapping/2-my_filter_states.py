@@ -10,7 +10,7 @@ if __name__ == "__main__":
                          password=sys.argv[2], db=sys.argv[3], port=3306)
     cursor = db.cursor()
     state = sys.argv[4]
-    cursor.execute("SELECT * FROM states WHERE name LIKE '{}%' ORDER BY
+    cursor.execute("SELECT * FROM states WHERE name LIKE '{}%' ORDER BY\
                    id ASC".format(state))
     rows = cursor.fetchall()
     for row in rows:
